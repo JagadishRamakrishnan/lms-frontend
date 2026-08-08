@@ -2,23 +2,23 @@ import React from "react";
 
 export default function Hero() {
     return (
-        <section className="relative overflow-hidden px-16 py-16 md:py-20">
+        <section className="relative overflow-hidden md:px-16 px-5 py-10 md:py-20">
             <div className="mx-auto grid grid-cols-1 items-center gap-4 lg:grid-cols-2">
                 {/* LEFT CONTENT */}
                 <div className="relative z-10">
                     {/* Tagline pill */}
-                    <div className="mb-6 inline-flex items-center gap-2 rounded-full bg-[#FBE3D5] px-4 py-2 text-lg font-medium text-neutral-800">
+                    <div className="mb-6 inline-flex items-center gap-2 rounded-full bg-[#FBE3D5] px-4 py-2 md:text-lg font-medium text-neutral-800">
                         <span>*</span>
                         <span>Get started with SMITIV-Edu</span>
                         <span>*</span>
                     </div>
 
                     {/* Heading */}
-                    <h1 className="md:text-7xl font-bold md:leading-[1.1] tracking-wide text-neutral-900">
+                    <h1 className="md:text-7xl text-2xl font-bold md:leading-[1.1] tracking-wide text-neutral-900">
                         Find suitable courses from the best mentors
                     </h1>
 
-                    <p className="mt-6 max-w-md text-lg leading-relaxed text-neutral-900">
+                    <p className="mt-6 max-w-md md:text-lg leading-relaxed text-neutral-900">
                         The good gathering doesn't bearing day stars over open behold may
                         male tree replenish don't blessed beast days earth fifth let
                         multiply and he every blessed.
@@ -35,12 +35,12 @@ export default function Hero() {
                 </div>
 
                 {/* RIGHT IMAGE COLLAGE */}
-                <div className="relative mx-auto h-[520px] w-full max-w-[560px] lg:h-[600px]">
+                <div className="relative mx-auto h-[40vh] md:h-[520px] w-full max-w-[560px] lg:h-[600px]">
                     {/* background green shape */}
-                    <div className="absolute -right-6 top-0 h-64 w-56 rounded-3xl bg-[#DCE7DC] sm:h-72 sm:w-64" />
+                    <div className="hidden md:block absolute -right-6 top-0 h-64 w-56 rounded-3xl bg-[#DCE7DC] sm:h-72 sm:w-64" />
 
                     {/* dotted decoration */}
-                    <div className="absolute right-0 top-0 grid grid-cols-4 gap-1.5 p-3">
+                    <div className="hidden md:grid absolute right-0 top-0  grid-cols-4 gap-1.5 p-3">
                         {Array.from({ length: 16 }).map((_, i) => (
                             <span
                                 key={i}
@@ -50,7 +50,7 @@ export default function Hero() {
                     </div>
 
                     {/* main portrait image */}
-                    <div className="absolute z-10 left-1/2 top-8 h-[440px] w-[330px] -translate-x-1/2 overflow-hidden rounded-3xl shadow-xl sm:h-[480px] sm:w-[360px]">
+                    <div className="absolute z-10 left-1/2 top-8 h-full md:h-[440px] md:w-[330px] w-full -translate-x-1/2 overflow-hidden rounded-3xl shadow-xl sm:h-[480px] sm:w-[360px]">
                         <img
                             src="https://cdn.prod.website-files.com/64fed37ef8f0a16c147f2b29/64feefd6e8bce1dce6dfb123_hero-image.jpg"
                             alt="Hero"
@@ -59,7 +59,7 @@ export default function Hero() {
                     </div>
 
                     {/* small blurred top-left image */}
-                    <div className="absolute left-0 top-0 h-24 w-24 overflow-hidden rounded-2xl shadow-lg sm:h-28 sm:w-28">
+                    <div className="hidden md:block absolute left-0 top-0 h-24 w-24 overflow-hidden rounded-2xl shadow-lg sm:h-28 sm:w-28">
                         <img
                             src="https://cdn.prod.website-files.com/64fed37ef8f0a16c147f2b29/650036a25829f695456adff4_hero-image-3.jpg"
                             alt="Hero small top"
@@ -68,7 +68,7 @@ export default function Hero() {
                     </div>
 
                     {/* small image bottom-right */}
-                    <div className="absolute -right-4 bottom-8 h-32 w-32 overflow-hidden rounded-2xl shadow-lg sm:h-36 sm:w-36">
+                    <div className="hidden md:block absolute -right-4 bottom-8 h-32 w-32 overflow-hidden rounded-2xl shadow-lg sm:h-36 sm:w-36">
                         <img
                             src="https://cdn.prod.website-files.com/64fed37ef8f0a16c147f2b29/65003763d8af464b8a4e7dfe_hero-image-2.jpg"
                             alt="Hero small right"
@@ -77,7 +77,7 @@ export default function Hero() {
                     </div>
 
                     {/* floating "UI Design Pattern" card */}
-                    <div className="absolute bottom-0 left-0 w-56 rounded-2xl bg-[#FBE3D5] p-4 shadow-lg sm:w-60">
+                    <div className="hidden md:block absolute bottom-0 left-0 w-56 rounded-2xl bg-[#FBE3D5] p-4 shadow-lg sm:w-60">
                         <h2 className="mb-3 text-base font-bold text-neutral-900">
                             UI Design Pattern
                         </h2>

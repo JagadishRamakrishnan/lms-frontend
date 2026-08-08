@@ -82,7 +82,7 @@ const Home = () => {
       </section>
 
       {/* FEATURED COURSES */}
-      <section className="px-16 py-20">
+      <section className="md:px-16 px-5 py-20">
         <div className="flex items-end justify-between mb-8">
           <div>
             <h2 className="text-2xl sm:text-3xl font-bold text-slate-900">Featured Courses</h2>
@@ -106,7 +106,7 @@ const Home = () => {
 
       {/* TESTIMONIALS */}
       <section className="py-10">
-        <div className="px-16">
+        <div className="md:px-16 px-5">
           {/* Heading */}
           <div className="text-center mb-12">
             <p className="text-base font-semibold text-indigo-600 mb-2">
@@ -203,7 +203,7 @@ const Home = () => {
       </section>
 
       {/* CTA */}
-      <section className="py-10 px-16">
+      <section className="py-10 md:px-16 px-5">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}

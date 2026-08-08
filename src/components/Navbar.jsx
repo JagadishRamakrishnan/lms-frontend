@@ -24,8 +24,8 @@ const Navbar = () => {
 
   return (
     <header className="">
-      <nav className="px-16 flex items-center justify-between h-16">
-        <Link to="/" className="flex items-center gap-2 font-semibold text-3xl text-slate-900">
+      <nav className="lg:px-16 px-5 flex items-center justify-between h-16">
+        <Link to="/" className="flex items-center gap-2 font-semibold md:text-3xl text-xl text-slate-900">
           <span className="h-9 w-9 rounded-xl bg-[#252422] text-white flex items-center justify-center">
             <GraduationCap className="w-5 h-5" />
           </span>
@@ -147,14 +147,14 @@ const Navbar = () => {
               )}
               <div className="flex gap-3 pt-2">
                 {!user ? (
-                  <>
+                  <div className="flex w-full flex-col gap-3">
                     <Link to="/login" onClick={() => setOpen(false)} className="btn-secondary flex-1 !py-2 text-sm">
                       Login
                     </Link>
-                    <Link to="/register" onClick={() => setOpen(false)} className="bg-[#c4dac8] flex-1 !py-2 text-sm">
+                    <Link to="/register" onClick={() => setOpen(false)} className="btn-primary flex-1 !py-2 text-sm">
                       Get Started
                     </Link>
-                  </>
+                  </div>
                 ) : (
                   <button
                     onClick={handleLogout}
